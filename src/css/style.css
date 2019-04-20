@@ -27,7 +27,8 @@
 .section-main-content-subtitle {
     color: black;
     font-size: 18px;
-    width: 1069px;
+    /*width: 1069px;*/
+    width: 100%;
     margin: 0 auto;
 }
 
