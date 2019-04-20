@@ -48,9 +48,10 @@
 }
 
 .section-main-content-slider-item {
-    padding-top: 50px;
+    /*padding-top: 50px;*/
+    margin-top: 50px;
     text-align: center;
-    width: 250px;
+    /*width: 250px;*/
     height: 250px;
     /*box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.03);*/
     /*border: 2px solid red;*/

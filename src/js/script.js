@@ -23,6 +23,18 @@ jQuery(document).ready(function ($) {
                 }
             }]
     });
+    $.get(
+        "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&outputsize=full&apikey=466U4PJ0R9230V6C",
+
+        // "http://api.openweathermap.org/data/2.5/weather",
+        // {
+        //     "id": "2643743",
+        //     "appid": "d74f35da617974e2c8453a4e52d3aa81"
+        // },
+        function (data) {
+            console.log(data);
+        }
+    )
 });
 
 $('.section-main-content-slider-item').click(function () {
