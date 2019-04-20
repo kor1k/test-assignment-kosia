@@ -1,3 +1,7 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
 .section-main-content {
     display: flex;
     justify-content: center;
@@ -63,7 +67,7 @@
 
 button.slick-next, button.slick-next:hover {
     position: absolute;
-    top: 36%;
+    top: 50%;
     right: -50px;
     /*width: 47px;*/
     /*height: 75px;*/
@@ -74,7 +78,7 @@ button.slick-next, button.slick-next:hover {
 
 button.slick-prev, button.slick-prev:hover {
     position: absolute;
-    top: 36%;
+    top: 50%;
     left: -50px;
     z-index: 1;
     /*width: 47px;*/
@@ -447,8 +451,7 @@ button.slick-prev, button.slick-prev:hover {
        and use this to set color instead
       -webkit-text-fill-color: white; */
     text-shadow: 1px 1px 0 silver, /* Simulated effect for Firefox and Opera
-       and nice enhancement for WebKit */
-    -1px -1px 0 silver, 1px -1px 0 silver, -1px 1px 0 silver, 1px 1px 0 silver;
+       and nice enhancement for WebKit */ -1px -1px 0 silver, 1px -1px 0 silver, -1px 1px 0 silver, 1px 1px 0 silver;
     /* / Обводка маркеров */
 
 }
