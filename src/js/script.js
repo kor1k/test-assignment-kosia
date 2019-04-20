@@ -5,8 +5,8 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 4,
         dots: true,
         dotsClass: "my-dots",
-        autoplay: true,
-        autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 600,
             settings: {
@@ -24,3 +24,7 @@ jQuery(document).ready(function ($) {
             }]
     });
 });
+
+$('.section-main-content-slider-item').click(function () {
+    $(this).toggleClass('active');
+})
