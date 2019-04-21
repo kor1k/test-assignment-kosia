@@ -35,8 +35,8 @@ jQuery(document).ready(function ($) {
 
 
     $('.section-main-content-slider-item').click(function () {
-        $('.section-main-content-slider-item').removeClass('active');
-        $(this).toggleClass('active');
+        $('.section-main-content-slider-item').removeClass('tab-active');
+        $(this).toggleClass('tab-active');
     });
 
     $.get(
@@ -52,6 +52,7 @@ jQuery(document).ready(function ($) {
             // let pressure = '';
             // let temp_min = '';
             // out += 'Погода: <b>' + data.weather[0].main + '</b><br>';
+            console.log(data)
             temp += 'Temp: <b>' + Math.round(data.main.temp - 273) + ' C &#176;</b><br>';
             humi += 'Humidity: <b>' + data.main.humidity + '%</b>';
             pressure += 'Pressure: <b>' + data.main.pressure + '</b>';
