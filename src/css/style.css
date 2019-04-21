@@ -1,12 +1,14 @@
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica;
     text-decoration: none;
-    /*line-height: 30px;*/
+    transition: .25s;
+
 }
 
 .tab-active {
+    transform: perspective(20px);
     box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.03);
-    /*padding: 20px;*/
+    font-size: 19px;
 }
 
 .section-main-content {
@@ -32,7 +34,6 @@
 .section-main-content-subtitle {
     color: black;
     font-size: 18px;
-    /*width: 1069px;*/
     width: 1000px;
     margin: 0 auto;
 }
@@ -47,14 +48,12 @@
 
 .section-main-content-slider-items {
     width: 900px;
-    /*padding-top: 50px;*/
 }
 
 .section-main-content-slider-item {
     margin-top: 100px;
     text-align: center;
     width: 100%;
-    /*margin-top: 38px;*/
     height: 250px;
     background-color: #ffffff;
 }
@@ -84,7 +83,6 @@
 .bold-item-name {
     font-weight: 900;
     font-size: 20px;
-    /*display: inline-block;*/
 }
 
 .item-name {
@@ -123,12 +121,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    /*margin: 20px;*/
 }
 
 .section-main-content-progress-bar-items > img {
-    /*width: 50px;*/
-    /*height: 50px;*/
     padding: 5px;
     border-radius: 50%;
 }
@@ -195,7 +190,6 @@
     padding-left: 3px;
     transition: .4s;
     filter: none;
-    /*border-radius: 50%;*/
 }
 
 .section-main-content-progress-bar-item-rating:hover {
@@ -257,7 +251,6 @@
     height: 0;
     border: 2px solid black;
     opacity: 0.1;
-    /*margin-bottom: 100px;*/
     margin: 20px 0 64px 0;
 }
 
@@ -273,7 +266,6 @@
 }
 
 .section-slogan {
-    /*margin-top: 110px;*/
     margin: 100px 0 100px 0;
     font-family: Helvetica, sans-serif;
     background-image: url("../img/slogan-bg.png");
@@ -292,10 +284,8 @@
     font-family: HelveticaBold;
     display: flex;
     justify-content: center;
-    /*text-align: center;*/
     font-size: 35px;
     color: white;
-    /*margin-bottom: 22px;*/
     margin: 30px 0 22px 0;
     font-weight: 800;
 }
@@ -303,20 +293,12 @@
 .section-slogan-subtitle {
     display: flex;
     justify-content: center;
-    /*text-align: center;*/
     font-size: 18px;
     color: white;
     width: 750px;
     text-align: center;
     line-height: 30px;
 }
-
-/*.slogan-live-acc {*/
-/*margin-top: 20px;*/
-/*color: white;*/
-/*font-size: 14px;*/
-/*}*/
-
 
 @media screen and (max-width: 1281px) {
     .section-main-content-slider-items {
@@ -342,7 +324,6 @@
     }
 
     .section-main-content-progress-bar-finish-line {
-        /*width: 100%;*/
         width: 20rem;
     }
 
@@ -368,7 +349,7 @@
     }
 
     .live-acc-btn {
-        margin-top: 80px;
+        margin-top: 50px;
     }
 
 }
@@ -433,7 +414,7 @@ button.slick-prev, button.slick-prev:hover {
     font-weight: bold;
 }
 
-.my-dots {
+.custom-dots {
     position: absolute;
     bottom: -45px;
     display: block;
@@ -443,7 +424,7 @@ button.slick-prev, button.slick-prev:hover {
     text-align: center;
 }
 
-.my-dots li {
+.custom-dots li {
     position: relative;
     display: inline-block;
     width: 20px;
@@ -453,7 +434,7 @@ button.slick-prev, button.slick-prev:hover {
     cursor: pointer;
 }
 
-.my-dots li button {
+.custom-dots li button {
     font-size: 0;
     line-height: 0;
     display: block;
@@ -467,17 +448,17 @@ button.slick-prev, button.slick-prev:hover {
     background: transparent;
 }
 
-.my-dots li button:hover,
-.my-dots li button:focus {
+.custom-dots li button:hover,
+.custom-dots li button:focus {
     outline: none;
 }
 
-.my-dots li button:hover:before,
-.my-dots li button:focus:before {
+.custom-dots li button:hover:before,
+.custom-dots li button:focus:before {
     opacity: 1;
 }
 
-.my-dots li button:before {
+.custom-dots li button:before {
     font-family: 'slick';
     font-size: 30px;
     line-height: 20px;
@@ -495,7 +476,7 @@ button.slick-prev, button.slick-prev:hover {
 
 }
 
-.my-dots li.slick-active button:before {
+.custom-dots li.slick-active button:before {
     opacity: .75;
     color: black;
 }

@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: true,
-        dotsClass: "my-dots",
+        dotsClass: "custom-dots",
         autoplay: true,
         autoplaySpeed: 7000,
         responsive: [{
@@ -20,8 +20,8 @@ jQuery(document).ready(function ($) {
                 breakpoint: 320,
                 settings: {
                     slidesToShow: 1,
-                    arrows: true,
-                    dots: true,
+                    arrows: false,
+                    dots: false,
                     slidesToScroll: 1
                 }
             }]
@@ -41,10 +41,7 @@ jQuery(document).ready(function ($) {
         },
         function (data) {
             let temp = '', humi = '', pressure = '', temp_min = '', temp_max = '';
-            // let humi = '';
-            // let pressure = '';
-            // let temp_min = '';
-            console.log(data)
+            console.log(data);
             temp += 'Temp: <b>' + Math.round(data.main.temp - 273) + ' C &#176;</b><br>';
             humi += 'Humidity: <b>' + data.main.humidity + '%</b>';
             pressure += 'Pressure: <b>' + data.main.pressure + '</b>';
