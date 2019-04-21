@@ -9,6 +9,7 @@
 }
 
 .section-main-content {
+    font-family: Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -81,6 +82,16 @@
     font-size: 25px;
 }
 
+.live-acc-btn-subtitle {
+    margin-top: 15px;
+}
+
+.live-acc-btn-subtitle-white {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
 .temp-show,
 .humi-show,
 .pressure-show,
@@ -127,6 +138,45 @@
     border: 2px solid #000000;
     opacity: 0.1;
 }
+
+.section-slogan {
+    /*margin-top: 110px;*/
+    margin: 100px 0 100px 0;
+    font-family: Helvetica, sans-serif;
+    background: url("../img/slogan-bg.png");
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-slogan-title {
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+    font-size: 35px;
+    color: white;
+    margin-bottom: 22px;
+    font-weight: 800;
+}
+
+.section-slogan-subtitle {
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+    font-size: 18px;
+    color: white;
+    width: 750px;
+    text-align: center;
+}
+
+/*.slogan-live-acc {*/
+/*margin-top: 20px;*/
+/*color: white;*/
+/*font-size: 14px;*/
+/*}*/
 
 
 @media screen and (max-width: 1281px) {
