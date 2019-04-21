@@ -34,17 +34,16 @@ jQuery(document).ready(function ($) {
             "appid": "d74f35da617974e2c8453a4e52d3aa81"
         },
         function (data) {
-            let temp = '';
-            let humi = '';
-            let pressure = '';
-            let temp_min = '';
-            let temp_max = '';
+            let temp = '', humi = '', pressure = '', temp_min = '', temp_max = '';
+            // let humi = '';
+            // let pressure = '';
+            // let temp_min = '';
             // out += 'Погода: <b>' + data.weather[0].main + '</b><br>';
-            temp += 'Temp: <b>' + Math.round(data.main.temp - 273) + 'C</b><br>';
+            temp += 'Temp: <b>' + Math.round(data.main.temp - 273) + ' C &#176;</b><br>';
             humi += 'Humidity: <b>' + data.main.humidity + '%</b>';
             pressure += 'Pressure: <b>' + data.main.pressure + '</b>';
-            temp_max += 'T max:<b>' + data.main.temp_max + '</b>';
-            temp_min += 'T min:<b>' + data.main.temp_min + '</b>';
+            temp_max += 'T max:<b>' + Math.round(data.main.temp_max - 273) + ' С &#176;</b>';
+            temp_min += 'T min:<b>' + Math.round(data.main.temp_min - 273) + ' С &#176;</b>';
             // console.log('Humidity: '+data.main.humidity + '%');
             // console.log('Temp: '+Math.round(data.main.temp-273));
             console.log(data.main);
@@ -61,4 +60,4 @@ jQuery(document).ready(function ($) {
 
 $('.section-main-content-slider-item').click(function () {
     $(this).toggleClass('active');
-})
+});
