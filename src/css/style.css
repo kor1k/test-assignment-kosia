@@ -20,6 +20,7 @@
 }
 
 .section-main-content-title {
+    font-family: HelveticaBold;
     display: flex;
     font-size: 45px;
     color: black;
@@ -37,6 +38,7 @@
 }
 
 .section-main-content-progress-bar-title {
+    font-family: HelveticaBold;
     color: black;
     font-size: 21px;
     margin: 55px 0 15px 0;
@@ -134,7 +136,17 @@
 .section-main-content-progress-bar-item-star {
     border: 2px solid #fe0000;
     border-radius: 50%;
+    transition: .4s;
+    filter: none;
 }
+
+.section-main-content-progress-bar-item-star:hover,
+.section-main-content-progress-bar-item-oil:hover,
+.section-main-content-progress-bar-item-exch-grn:hover,
+.section-main-content-progress-bar-item-exch-viol:hover {
+    filter: grayscale(100%);
+}
+
 
 .section-main-content-progress-bar-item-star-border {
     display: flex;
@@ -163,7 +175,10 @@
 .section-main-content-progress-bar-item-oil {
     border: 2px solid #00a7cc;
     border-radius: 50%;
+    filter: none;
+    transition: .4s;
 }
+
 
 .section-main-content-progress-bar-item-oil-border {
     display: flex;
@@ -178,7 +193,13 @@
 
 .section-main-content-progress-bar-item-rating {
     padding-left: 3px;
+    transition: .4s;
+    filter: none;
     /*border-radius: 50%;*/
+}
+
+.section-main-content-progress-bar-item-rating:hover {
+    filter: grayscale(100%);
 }
 
 .section-main-content-progress-bar-item-rating-border {
@@ -198,11 +219,15 @@
 .section-main-content-progress-bar-item-exch-grn {
     border: 2px solid #39b54a;
     border-radius: 50%;
+    transition: .4s;
+    filter: none;
 }
 
 .section-main-content-progress-bar-item-exch-viol {
     border: 2px solid #8560a8;
     border-radius: 50%;
+    transition: .4s;
+    filter: none;
 }
 
 .section-main-content-progress-bar-item-exch-grn-border {
@@ -264,6 +289,7 @@
 }
 
 .section-slogan-title {
+    font-family: HelveticaBold;
     display: flex;
     justify-content: center;
     /*text-align: center;*/
@@ -455,12 +481,9 @@ button.slick-prev, button.slick-prev:hover {
     font-family: 'slick';
     font-size: 30px;
     line-height: 20px;
-    /*margin-top: 25px;*/
     position: absolute;
     top: 0;
     left: 0;
-    /*width: 30px;*/
-    /*height: 30px;*/
     content: '•';
     text-align: center;
     opacity: .25;
@@ -468,8 +491,7 @@ button.slick-prev, button.slick-prev:hover {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-stroke: 1px silver;
-    text-shadow: 1px 1px 0 silver, /* Simulated effect for Firefox and Opera
-       and nice enhancement for WebKit */ -1px -1px 0 silver, 1px -1px 0 silver, -1px 1px 0 silver, 1px 1px 0 silver;
+    text-shadow: 1px 1px 0 silver, -1px -1px 0 silver, 1px -1px 0 silver, -1px 1px 0 silver, 1px 1px 0 silver;
 
 }
 

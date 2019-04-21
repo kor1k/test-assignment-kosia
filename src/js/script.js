@@ -6,7 +6,7 @@ jQuery(document).ready(function ($) {
         dots: true,
         dotsClass: "my-dots",
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 7000,
         responsive: [{
             breakpoint: 481,
             settings: {
@@ -36,7 +36,7 @@ jQuery(document).ready(function ($) {
         // "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&outputsize=full&apikey=466U4PJ0R9230V6C",
         "http://api.openweathermap.org/data/2.5/weather",
         {
-            "id": "2643743",
+            "id": "2643743", //London, GB
             "appid": "d74f35da617974e2c8453a4e52d3aa81"
         },
         function (data) {
