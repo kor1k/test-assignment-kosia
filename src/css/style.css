@@ -89,6 +89,24 @@
     font-size: 16px;
 }
 
+@media screen and (max-width: 1281px) {
+    .section-main-content-slider-items {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section-main-content-slider-items {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-main-content-slider-items {
+        width: 320px;
+    }
+}
+
 /*__________*/
 
 .slick-slide {

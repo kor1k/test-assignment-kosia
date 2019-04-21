@@ -8,16 +8,19 @@ jQuery(document).ready(function ($) {
         // autoplay: true,
         // autoplaySpeed: 2000,
         responsive: [{
-            breakpoint: 600,
+            breakpoint: 481,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
+                arrows: false,
+                dots: false,
                 slidesToScroll: 1
             }
         },
             {
-                breakpoint: 400,
+                breakpoint: 320,
                 settings: {
                     arrows: false,
+                    dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1
                 }
