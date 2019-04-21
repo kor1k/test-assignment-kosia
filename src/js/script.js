@@ -5,35 +5,28 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 4,
         dots: true,
         dotsClass: "my-dots",
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 481,
             settings: {
                 slidesToShow: 1,
-                arrows: false,
-                dots: false,
+                arrows: true,
+                dots: true,
                 slidesToScroll: 1
             }
         },
             {
                 breakpoint: 320,
                 settings: {
-                    arrows: false,
-                    dots: false,
                     slidesToShow: 1,
+                    arrows: true,
+                    dots: true,
                     slidesToScroll: 1
                 }
             }]
 
     });
-    // $('.content-side-options__option').click(function () {
-    //     $('.content-side-main-result').show(1000);
-    //     $('.content-side-options__option').removeClass('active');
-    //     $(this).toggleClass('active');
-    // });
-
-
     $('.section-main-content-slider-item').click(function () {
         $('.section-main-content-slider-item').removeClass('tab-active');
         $(this).toggleClass('tab-active');
@@ -51,7 +44,6 @@ jQuery(document).ready(function ($) {
             // let humi = '';
             // let pressure = '';
             // let temp_min = '';
-            // out += 'Погода: <b>' + data.weather[0].main + '</b><br>';
             console.log(data)
             temp += 'Temp: <b>' + Math.round(data.main.temp - 273) + ' C &#176;</b><br>';
             humi += 'Humidity: <b>' + data.main.humidity + '%</b>';
@@ -60,14 +52,12 @@ jQuery(document).ready(function ($) {
             temp_min += 'T min:<b>' + Math.round(data.main.temp_min - 273) + ' С &#176;</b>';
             // console.log('Humidity: '+data.main.humidity + '%');
             // console.log('Temp: '+Math.round(data.main.temp-273));
-            console.log(data.main);
+            console.log(data);
             $('.temp-show').html(temp);
             $('.humi-show').html(humi);
             $('.pressure-show').html(pressure);
             $('.temp_min-show').html(temp_min);
             $('.temp_max-show').html(temp_max);
-
-
         }
     )
 });
