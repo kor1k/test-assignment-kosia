@@ -25,7 +25,20 @@ jQuery(document).ready(function ($) {
                     slidesToScroll: 1
                 }
             }]
+
     });
+    // $('.content-side-options__option').click(function () {
+    //     $('.content-side-main-result').show(1000);
+    //     $('.content-side-options__option').removeClass('active');
+    //     $(this).toggleClass('active');
+    // });
+
+
+    $('.section-main-content-slider-item').click(function () {
+        $('.section-main-content-slider-item').removeClass('active');
+        $(this).toggleClass('active');
+    });
+
     $.get(
         // "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&outputsize=full&apikey=466U4PJ0R9230V6C",
         "http://api.openweathermap.org/data/2.5/weather",
@@ -56,8 +69,4 @@ jQuery(document).ready(function ($) {
 
         }
     )
-});
-
-$('.section-main-content-slider-item').click(function () {
-    $(this).toggleClass('active');
 });
