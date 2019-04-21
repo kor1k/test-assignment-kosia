@@ -99,10 +99,18 @@
     .section-main-content-slider-items {
         width: 320px;
     }
+
+    .section-main-content-subtitle {
+        width: 320px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .section-main-content-slider-items {
+        width: 320px;
+    }
+
+    .section-main-content-subtitle {
         width: 320px;
     }
 }
