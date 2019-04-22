@@ -161,26 +161,12 @@
     margin-right: 10px;
 }
 
-/*.separate-line-stocks {*/
-/*!*position: relative;*!*/
-/*!*transform: rotateX(-180deg);*!*/
-/*content: "";*/
-/*width: 150px;*/
-/*height: 10px;*/
-/*background-color: black;*/
-/*!*border: 1px solid silver;*!*/
-/*!*left: 20px;*!*/
-/*!*top: 50px;*!*/
-/*!*bottom: 20px;*!*/
-/*}*/
-
 .section-main-content-progress-bar-item-oil {
     border: 2px solid #00a7cc;
     border-radius: 50%;
     filter: none;
     transition: .4s;
 }
-
 
 .section-main-content-progress-bar-item-oil-border {
     display: flex;
@@ -214,7 +200,6 @@
     padding: 5px;
     border: 2px dashed black;
     border-radius: 50%;
-    /*margin-right: 10px;*/
 }
 
 .section-main-content-progress-bar-item-exch-grn {
