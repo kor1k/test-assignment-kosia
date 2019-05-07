@@ -38,6 +38,9 @@ jQuery(document).ready(function ($) {
        $('.section-main-content-slider-items').toggleClass('section-main-content-slider-items-hide');
    });
 
+  // TODO: add 4 different content in sliders to each round image
+  // TODO: add simple toggling of NEW different content in slider
+
     $.get(
         // "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&outputsize=full&apikey=466U4PJ0R9230V6C",
         "http://api.openweathermap.org/data/2.5/weather",
