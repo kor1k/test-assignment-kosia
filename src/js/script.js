@@ -45,6 +45,11 @@ jQuery(document).ready(function ($) {
     //     $(this).toggleClass('active');
     // });
 
+    $('.bar-item').click(function () {
+        $('.bar-item').removeClass('active');
+        $(this).toggleClass('active');
+    });
+
     // TODO: add 4 different content in sliders to each round image
     // TODO: add simple toggling of NEW different content in slider
 
