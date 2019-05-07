@@ -50,6 +50,24 @@
     width: 900px;
 }
 
+/*.section-main-content-slider-items {*/
+/*    display: none;*/
+/*}*/
+
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.test-2,
+.test-3,
+.test-4,
+.test-5 {
+    display: none;
+}
+
 .section-main-content-slider-item {
     margin-top: 100px;
     text-align: center;
@@ -204,7 +222,6 @@
 
 .section-main-content-slider-items-hide {
     display: none;
-    width: 0;
 }
 
 .section-main-content-progress-bar-item-exch-grn {
